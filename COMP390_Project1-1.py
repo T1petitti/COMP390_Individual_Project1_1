@@ -89,7 +89,7 @@ print("=======================================")
 # ITERATE OVER LIST OF LABELLED LISTS THAT MATCH DATA REQUIREMENTS
 for line in data_holder:
     print(
-        # EXTRACT AND PRINT THE NAME AND DESIRED DATA VALUE INTO TABLE
+        # EXTRACT AND PRINT THE NAME AND DESIRED DATA VALUE INTO TABLE.
         f'{data_holder.index(line) + 1:<5}{line.get("Name"):<24}{line.get(f"{data_filter.lower()}"):<20}')
 
 file_obj.close()
